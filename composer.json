@@ -1,0 +1,29 @@
+{
+  "name": "codexten/yii-shortcode",
+  "description": "extented yii shortcode components for codexten packages",
+  "keywords": [
+    "yii2",
+    "codexten"
+  ],
+  "type": "library",
+  "require": {
+    "codexten/yii-core": "~2.0.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "codexten\\yii\\shortcode\\": "src"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "2.0.x-dev"
+    },
+    "sconfig-plugin": {
+      "params": "src/config/params.php",
+      "shortcode": [
+        "$core",
+        "src/config/shortcode.php"
+      ]
+    }
+  }
+}
